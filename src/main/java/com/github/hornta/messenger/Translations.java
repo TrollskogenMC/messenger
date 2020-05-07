@@ -48,10 +48,9 @@ public class Translations {
     return streams;
   }
 
-  public Translation createTranslation(String language) {
+  public Translation createTranslation(String language) throws MessengerException {
     if(!languageFiles.containsKey(language)) {
-      plugin.getLogger().log(Level.SEVERE, "Couldn't find translation `" + language + "`");
-      return null;
+      throw new MessengerException("Couldn't find translation `%s`", language);
     }
 
     Translation translation = new Translation(languageFiles.get(language), language);

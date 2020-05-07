@@ -9,9 +9,9 @@ import java.util.*;
 import java.util.logging.Level;
 
 public class Translation {
-  private File file;
-  private String language;
-  private Map<Enum, String> translations = new HashMap<>();
+  private final File file;
+  private final String language;
+  private final Map<Enum, String> translations = new HashMap<>();
 
   Translation(File file, String language) {
     this.file = file;
