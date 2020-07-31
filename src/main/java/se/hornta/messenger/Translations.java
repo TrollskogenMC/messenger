@@ -1,4 +1,4 @@
-package com.github.hornta.messenger;
+package se.hornta.messenger;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -88,7 +88,7 @@ public class Translations {
         if (!result) {
           return false;
         }
-      } catch (IllegalArgumentException e) {
+      } catch (IllegalArgumentException ignored) {
       }
     }
 
@@ -112,7 +112,7 @@ public class Translations {
 
       // add keys from resource not found in destination
       for(String key : resourceYaml.getKeys(true)) {
-        if(!destYaml.contains(key)) {
+        if(!destYaml.isSet(key)) {
           destYaml.set(key, resourceYaml.get(key));
           plugin.getLogger().log(Level.INFO, "Added missing key `" + key + "` to `" + dest.getName() + "`.");
         }

@@ -1,4 +1,4 @@
-package com.github.hornta.messenger;
+package se.hornta.messenger;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

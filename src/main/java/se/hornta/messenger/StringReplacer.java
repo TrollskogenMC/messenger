@@ -1,4 +1,4 @@
-package com.github.hornta.messenger;
+package se.hornta.messenger;
 
 import java.util.function.Function;
 import java.util.regex.Matcher;

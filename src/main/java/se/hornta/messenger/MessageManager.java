@@ -1,4 +1,4 @@
-package com.github.hornta.messenger;
+package se.hornta.messenger;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;

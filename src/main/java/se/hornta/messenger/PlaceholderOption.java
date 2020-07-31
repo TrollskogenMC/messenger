@@ -1,4 +1,4 @@
-package com.github.hornta.messenger;
+package se.hornta.messenger;
 
 public enum PlaceholderOption {
   DELIMITER;
